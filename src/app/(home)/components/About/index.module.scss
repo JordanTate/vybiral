@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+
+  p {
+    margin-bottom: 4rem;
+    font-weight: 300;
+    line-height: 200%;
+    letter-spacing: 0.1em;
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 6px;
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+}

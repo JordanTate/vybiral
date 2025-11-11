@@ -1,0 +1,44 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 1000px;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .imageContainer {
+    position: relative;
+
+    .imageInfo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.95);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      color: white;
+      padding: 0.5rem;
+      z-index: 10;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .artist,
+      .track {
+        color: var(--accent);
+      }
+    }
+  }
+}
