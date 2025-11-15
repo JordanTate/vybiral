@@ -5,6 +5,7 @@ import gsap from 'gsap/dist/gsap';
 import ScrollSmoother from 'gsap/dist/ScrollSmoother';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import ScrollToPlugin from 'gsap/dist/ScrollToPlugin';
 
 export default function ScrollSmootherProvider({
   children,
@@ -17,7 +18,7 @@ export default function ScrollSmootherProvider({
 
   useGSAP(
     () => {
-      gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+      gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
       smoother.current = ScrollSmoother.create({
         wrapper: wrapper.current!,
