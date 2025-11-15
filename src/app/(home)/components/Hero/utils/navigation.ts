@@ -5,9 +5,16 @@ export function handleScrollClick(
   e.preventDefault();
   const section = document.querySelector(`#${target}`);
   if (section) {
-    section.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+    // GSAP ScrollSmoother causes issues with native scrollIntoView
+    const smoother = (window as any).ScrollSmoother?.get();
+
+    if (smoother) {
+      smoother.scrollTo(section, true, 'top top');
+    } else {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
   }
 }
