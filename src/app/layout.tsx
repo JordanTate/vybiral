@@ -34,8 +34,10 @@ export default function RootLayout({
           />
         </div>
         <Nav />
-        <ScrollSmootherProvider>{children}</ScrollSmootherProvider>
-        <Footer />
+        <ScrollSmootherProvider>
+          {children}
+          <Footer />
+        </ScrollSmootherProvider>
       </body>
     </html>
   );
