@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
 import Image from 'next/image';
 import ScrollSmootherProvider from '@/providers/ScrollSmootherProvider';
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         </div>
         <Nav />
         <ScrollSmootherProvider>{children}</ScrollSmootherProvider>
+        <Footer />
       </body>
     </html>
   );
