@@ -35,12 +35,15 @@
     position: absolute;
     bottom: 1rem;
     left: 50%;
+    width: 100%;
+    padding: 1rem;
     transform: translateX(-50%);
     margin-bottom: 4rem;
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 200%;
     letter-spacing: 0.1em;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
     text-underline-offset: 6px;
