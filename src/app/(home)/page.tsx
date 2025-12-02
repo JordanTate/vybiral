@@ -8,8 +8,8 @@ export default function Home() {
     <div>
       <main>
         <Hero />
-        <About />
         <Listen />
+        <About />
         <Discography />
       </main>
     </div>
