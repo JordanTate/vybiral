@@ -12,6 +12,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.petrvybiral.com'),
   title: 'Petr Vybiral',
   description: 'Songwriter, Producer',
 };
