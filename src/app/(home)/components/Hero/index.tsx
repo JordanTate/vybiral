@@ -43,19 +43,11 @@ export default function Hero() {
           Petr Vybiral
         </motion.h1>
         <motion.p {...subtitleAnimationProps} className={styles.heroSubtitle}>
-          Songwriter / Producer / Mixer
+          Songwriter / Producer
         </motion.p>
         <div className={styles.heroButtons}>
-          <motion.div {...listenButtonAnimationProps}>
-            <Link
-              href='#listen'
-              onClick={(e) => handleScrollClick(e, 'listen')}
-            >
-              Listen
-            </Link>
-          </motion.div>
           <motion.div {...contactButtonAnimationProps}>
-            <Link href='/contact'>Contact</Link>
+            <Link href='/contact'>Get in Touch</Link>
           </motion.div>
         </div>
       </div>

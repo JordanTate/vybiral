@@ -8,7 +8,7 @@ export function useNav() {
       icon: 'home',
     },
     {
-      label: 'Contact',
+      label: 'Get in Touch',
       href: '/contact',
       icon: 'contact',
     },
