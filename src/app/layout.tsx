@@ -13,7 +13,20 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: 'Petr Vybiral',
-  description: 'Songwriter, Producer, Mixer',
+  description: 'Songwriter, Producer',
+  openGraph: {
+    title: 'Petr Vybiral',
+    description: 'Songwriter, Producer',
+    type: 'website',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        alt: 'Petr Vybiral - Songwriter, Producer',
+        width: 1920,
+        height: 1080,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
