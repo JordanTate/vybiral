@@ -30,7 +30,7 @@ export default function About() {
         transition={{ duration: 1, ease: 'easeInOut' }}
       >
         If this resonates with you, <Link href='/contact'>get in touch</Link>{' '}
-        with me.
+        with me to discuss your project and what I can do for you.
       </motion.p>
     </div>
   );
