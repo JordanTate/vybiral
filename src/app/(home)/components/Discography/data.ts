@@ -84,18 +84,18 @@ const galleryImages: GalleryImage[] = [
   },
   {
     src: '/images/showreel/ab67616d00001e025dd2bb820f8828b1ae218e64.jpeg',
-    alt: 'Dolphin House Experiement - Eclipse',
+    alt: 'Dolphin House Experiment - Eclipse',
     info: {
-      artist: 'Dolphin House Experiement',
+      artist: 'Dolphin House Experiment',
       track: 'Eclipse',
       credit: 'Additional Production / Mix',
     },
   },
   {
     src: '/images/showreel/ab67616d00001e0249e08bb5bb1f0724c4bb20db.jpeg',
-    alt: 'Dolphin House Experiement - Sane',
+    alt: 'Dolphin House Experiment - Sane',
     info: {
-      artist: 'Dolphin House Experiement',
+      artist: 'Dolphin House Experiment',
       track: 'Sane',
       credit: 'Additional Production / Mix',
     },
