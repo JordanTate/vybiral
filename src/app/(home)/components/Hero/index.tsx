@@ -47,7 +47,7 @@ export default function Hero() {
         </motion.p>
         <div className={styles.heroButtons}>
           <motion.div {...contactButtonAnimationProps}>
-            <Link href='/contact'>Get in Touch</Link>
+            <Link href='/contact'>Contact</Link>
           </motion.div>
         </div>
       </div>
