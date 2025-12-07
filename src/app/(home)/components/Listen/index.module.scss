@@ -30,30 +30,4 @@
     width: 100%;
     min-height: 600px;
   }
-
-  .link {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    width: 100%;
-    padding: 1rem;
-    transform: translateX(-50%);
-    margin-bottom: 4rem;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 200%;
-    letter-spacing: 0.1em;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-underline-offset: 6px;
-
-    &:hover {
-      color: var(--accent);
-    }
-
-    @media screen and (min-width: 768px) {
-      font-size: 2rem;
-    }
-  }
 }

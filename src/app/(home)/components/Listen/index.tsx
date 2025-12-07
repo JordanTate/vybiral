@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import SpotifyPlayer from '@/components/SpotifyPlayer';
 import styles from './index.module.scss';
-import Link from 'next/link';
 
 export default function Listen() {
   return (
@@ -20,9 +19,6 @@ export default function Listen() {
         height='352'
         styles={styles}
       />
-      <Link href='/contact' className={styles.link}>
-        Get in Touch
-      </Link>
     </div>
   );
 }
