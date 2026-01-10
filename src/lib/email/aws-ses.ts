@@ -22,9 +22,9 @@ async function sendEmail(parameters: SendEmailParams) {
       ToAddresses: [process.env.AWS_SES_TO_EMAIL || ''],
       BccAddresses: [
         process.env.NODE_ENV === 'development'
-          ? ''
-          : process.env.AWS_SES_BCC_EMAIL || '',
-      ].filter(Boolean),
+          ? process.env.AWS_SES_BCC_EMAIL || ''
+          : '',
+      ],
     },
     Message: {
       Subject: {
