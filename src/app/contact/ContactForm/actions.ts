@@ -36,7 +36,16 @@ export async function handleSubmit(
     };
   }
 
-  await sendEmail(data);
+  try {
+    await sendEmail(data);
+  } catch (error) {
+    return {
+      errors: {
+        errors: ['Failed to send email. Please try again later.'],
+      },
+      values: formValues,
+    };
+  }
 
   return {
     success: true,
