@@ -96,6 +96,11 @@
   font-family: var(--font-montserrat);
 }
 
+html,
+body {
+  overscroll-behavior: none;
+}
+
 h1 {
   text-transform: uppercase;
   font-size: 3rem;
