@@ -12,25 +12,25 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: 'easeInOut' }}
       >
-        I&apos;m a Songwriter, Producer and Mixer based in Manchester, England.
+        I&apos;m a Songwriter and Producer based in Manchester, England.
       </motion.p>
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: 'easeInOut' }}
       >
-        I&apos;ve spent the last 15 years in the trenches of music-making,
-        gathering experience one day at a time. I&apos;m keen to use everything
-        I&apos;ve learnt along the way to get the best out of your music in the
-        spirit of creative freedom - no assembly line attitudes involved.
+        I&apos;ve spent the last 15 years cutting my teeth in the trenches of
+        music-making and I&apos;m keen to use everything I&apos;ve learnt along
+        the way to get the best out of your music in the spirit of creative
+        freedom - no assembly line attitudes involved.
       </motion.p>
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: 'easeInOut' }}
       >
-        If this resonates with you, <Link href='/contact'>get in touch</Link>{' '}
-        with me to discuss your project and what I can do for you.
+        <Link href='/contact'>Get in touch</Link> with me now to discuss your
+        project and what I can do for you.
       </motion.p>
     </div>
   );
