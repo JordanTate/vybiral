@@ -102,7 +102,9 @@ export default function ContactForm() {
                     )}
                   </Field>
                   <Field className='hidden'>
-                    <FieldLabel htmlFor='website'>Website</FieldLabel>
+                    <FieldLabel htmlFor='website'>
+                      Website (Please leave this empty)
+                    </FieldLabel>
                     <InputGroup>
                       <InputGroupInput
                         type='text'
