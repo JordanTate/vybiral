@@ -13,6 +13,7 @@ const contactSchema = z.object({
     .string()
     .min(10, 'Message must be at least 10 characters long')
     .max(1000, 'Message must be at most 1000 characters long'),
+  website: z.string().max(0, 'Website must be empty').optional(),
 });
 
 export async function handleSubmit(
@@ -23,6 +24,7 @@ export async function handleSubmit(
     name: formData.get('name') as string,
     email: formData.get('email') as string,
     message: formData.get('message') as string,
+    website: formData.get('website') as string,
   };
 
   const { success, error, data } = contactSchema.safeParse(formValues);
