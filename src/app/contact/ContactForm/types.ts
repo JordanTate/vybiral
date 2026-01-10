@@ -19,6 +19,11 @@ export type HandleSubmitOutput =
                     errors?: string[];
                   }
                 | undefined;
+              website?:
+                | {
+                    errors?: string[];
+                  }
+                | undefined;
             }
           | undefined;
       };
@@ -26,6 +31,7 @@ export type HandleSubmitOutput =
         name: string;
         email: string;
         message: string;
+        website: string;
       };
       success?: undefined;
     }
